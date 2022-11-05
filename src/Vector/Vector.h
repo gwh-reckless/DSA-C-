@@ -23,6 +23,16 @@ public:
   Rank search(T const& e);
   Rank search(T const& e, Rank lo, Rank hi);
 
+  // operator
+  T& operator[](Rank r) { return _elem[r]; }
+  const T&  operator[](Rank r) const  { return _elem[r]; } // only as right value version
+  Vector<T>& operator=(Vector<T> const & V){
+    if(_elem) delete [] _elem;
+    copyFrom(V._elem, 0, V.size());
+    return *this; // for chain assignment
+  }
+
+
   // dynamic
   T remove(Rank r) { T v = _elem[r]; remove(r, r+1);  return v;}
   int remove(Rank lo, Rank hi);

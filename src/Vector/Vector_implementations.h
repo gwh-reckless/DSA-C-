@@ -8,3 +8,4 @@
 #include "Vector_remove.h"
 #include "Vector_deduplicate.h"
 #include "Vector_uniquify.h"
+#include "Vector_sort.h"

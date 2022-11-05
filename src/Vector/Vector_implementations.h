@@ -7,3 +7,4 @@
 #include "Vector_insert.h"
 #include "Vector_remove.h"
 #include "Vector_deduplicate.h"
+#include "Vector_uniquify.h"

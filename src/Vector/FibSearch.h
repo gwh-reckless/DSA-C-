@@ -6,7 +6,7 @@ using Rank=int;
 
 template <typename T>
 Rank fibSearch(T* S, T const& e, Rank lo, Rank hi){
-  fibSearch_v1(S, e, lo, hi);
+  return fibSearch_v1(S, e, lo, hi);
 }
 
 template <typename T>

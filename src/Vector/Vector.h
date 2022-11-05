@@ -36,14 +36,14 @@ public:
   // dynamic
   T remove(Rank r) { T v = _elem[r]; remove(r, r+1);  return v;}
   int remove(Rank lo, Rank hi);
-  Rank insert(T const& e){ insert(_size, e);} // insert at the bottom
+  Rank insert(T const& e){ return  insert(_size, e);} // insert at the bottom
   Rank insert(Rank r, T const& e);
   void sort() { sort(0,_size);}
   void sort(Rank lo, Rank hi);
   void unsort(){ unsort(0,_size);}
   void unsort(Rank lo, Rank hi);
-  Rank deduplicate();
-  Rank uniquify();
+  Rank deduplicate(); //  _elem without order
+  Rank uniquify(); // _elem with order
 
   void traverse(void(*)(T& ));
   template <typename VST> void traverse(VST& );

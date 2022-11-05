@@ -43,5 +43,5 @@ struct BinNode {
 };
 
 
-
+#include "BinNode_implementations.h"
 

@@ -12,8 +12,10 @@ int main()
   V.insert(2);
   V.insert(3);
   V.insert(3);
-  V.uniquify();
+  //V.uniquify();
   V.traverse(print);
+  Log("\n");
+  Log(V.search(1));
 
   return 0;
 }

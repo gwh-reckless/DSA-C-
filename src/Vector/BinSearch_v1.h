@@ -2,7 +2,7 @@
 
 using Rank=int;
 template <typename T>
-Rank BinSearch(const T *A, T e, Rank lo, Rank hi){
+Rank BinSearch_v1(const T *A, T e, Rank lo, Rank hi){
   while(lo < hi){
     int mi = (lo + hi) >> 1;
     if(e < A[mi]){

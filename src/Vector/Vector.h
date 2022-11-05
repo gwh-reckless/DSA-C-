@@ -1,6 +1,6 @@
 #pragma once
 
-#define DEFAULT_CAPACITY 3
+#define DEFAULT_CAPACITY 20
 using Rank=int;
 template <typename T>
 class Vector {

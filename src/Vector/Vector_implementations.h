@@ -4,3 +4,6 @@
 #include "Vector_find.h"
 #include "Vector_search.h"
 #include "Vector_traverse.h"
+#include "Vector_insert.h"
+#include "Vector_remove.h"
+#include "Vector_deduplicate.h"

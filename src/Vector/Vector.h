@@ -24,7 +24,7 @@ public:
   Rank search(T const& e, Rank lo, Rank hi);
 
   // dynamic
-  T remove(Rank r);
+  T remove(Rank r) { T v = _elem[r]; remove(r, r+1);  return v;}
   int remove(Rank lo, Rank hi);
   Rank insert(T const& e){ insert(_size, e);} // insert at the bottom
   Rank insert(Rank r, T const& e);

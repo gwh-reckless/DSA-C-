@@ -3,3 +3,4 @@
 #include "Vector_copyFrom.h"
 #include "Vector_find.h"
 #include "Vector_search.h"
+#include "Vector_traverse.h"

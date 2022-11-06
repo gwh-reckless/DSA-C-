@@ -43,4 +43,5 @@ public:
   { return _root && t._root && (_root == t._root);}
 };
 
+#include  "BinTree_implementations.h"
 

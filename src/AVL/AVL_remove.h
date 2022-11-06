@@ -5,7 +5,7 @@
 template <typename T>
 bool AVL<T>::remove(const T& e){
   BinNodePosi<T>& x = search(e); if(!x) return false; // _hot is the parent of the deleted node
-  removeAt(x,this->_hot); this->_size--;
+  removeAt(x,this->_hot); this->_size--; // delete according to BST rule, after deleting, _hot and above ancestors could be unbalanced.
   for(BinNodePosi<T> g = this->_hot; g; g = g->parent){
     if(!AvlBalanced(*g))
       g = FromParentTo(*g) = rotateAt(tallerChild(tallerChild(g)));

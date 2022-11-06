@@ -14,7 +14,7 @@ BinNodePosi<T> BinNode<T>::zig(){
   height = 1 + max(stature(lc), stature(rc));
   lChild->height = 1 + max(stature(lChild->lc), stature(lChild->rc));
   for(BinNodePosi<T> x = lChild->parent; x; x = x->parent){
-    if(HeightUpated(*x)){
+    if(HeightUpated(*x)){ // if x's height is updated
       break;
     } else {
       x -> height = 1 + max(stature(x->lc), stature(x->rc)); 

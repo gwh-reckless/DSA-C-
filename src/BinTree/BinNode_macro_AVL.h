@@ -2,7 +2,7 @@
 #include "_share/util.h"
 
 #define HeightUpated(x) \
-  ( (x).height = 1 + max( stature((x).lc) , stature((x)->rc)) )
+  ( (x).height == 1 + max( stature((x).lc) , stature((x)->rc)) )
 
 #define Balanced(x) (stature((x).lc) == stature((x).rc)) // The ideal balance condition
 #define BalFac(x) (stature((x).lc) - stature((x).rc)) // Balance Factor
